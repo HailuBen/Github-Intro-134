@@ -22,12 +22,12 @@ h2 {
     margin: 0;
     text-align: center;
 }
-
-section.show-button-section, section.hide-button-section {
-    text-align: center;
+h3 {
+    padding: 4px;
     margin: 0;
-
 }
+
+
 
 /* button styles */
 button {
@@ -55,25 +55,39 @@ button:nth-child(3):hover{
     background-color: rgb(74, 123, 74);
 }
 
-
-/* content section styles */
-section.content-section div {
+/* sections and section children styles */
+section.content div {
     display: none;
     padding: 10px;
     width: 350px;
 }
-
-blockquote{
-    font-size: 14px;
-}
-
-section.content-section, section.hide-content-section {
+section.content{
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: center;
 }
+section.content img {
+    border: 2px solid black;
+}
+section.show-button-section, section.hide-button-section {
+    text-align: center;
+    margin: 0;
+}
 
+/* content div styles  */
+#halloween-div{
+    border: 3px solid black;
+    background-color: lightsalmon;
+}
+#christmas-div{
+    border: 3px solid black;
+    background-color: lightcoral;
+}
+#new-years-div{
+    border: 3px solid black;
+    background-color: lightgreen;
+}
 
 /* footer styles */
 footer, footer p {
