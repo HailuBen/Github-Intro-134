@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="author" content="Beniam"> <!-- additional info -->
-    <meta name="description" content="GitHub Index Test Page"> <!-- Briefly describe the page -->
-    <meta name="keywords" content="HTML, CSS, Web Design, GitHub, Git">
+    <meta name="author" content="Beniam">
+    <meta name="description" content="Lab 7 Festival Website Page">
+    <meta name="keywords" content="HTML, CSS, Web Design, Festivals">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Git Intro</title>
+    <script src="demo.js" defer></script>
+    <title>Festivals</title>
 </head>
 <body>
-    <p>This is an edit made on GitHub.</p>
+    <header>
+            <h2>Festivals!</h2>
+    </header>
+    <main>
+        <section class="show-button-section">
+            <button type="button" onclick="functionShowHalloween()" class="halloween-button">Show Halloween</button>
+
+            <button type="button" onclick="functionShowChristmas()" class="christmas-button">Show Christmas</button>
+
+            <button type="button" onclick="functionShowNewYears()" class="new-years-button">Show New Years</button>
+        </section>
+
+        <section class="content-section">
+            <div id="halloween-div" >
+                <img src="img/halloween-harvest-img.jpg" alt="An image of a pumpkin" width="300px">
+                <p>Halloween is Halloween or Hallowe'en (less commonly known as Allhalloween, All Hallows' Eve, or All Saints' Eve) is a celebration observed in many countries on 31 October, the eve of the Western Christian feast of All Saints' Day</p>
+                <blockquote>Source:  <a href="https://en.wikipedia.org/wiki/Halloween">Halloween Wikipedia Article</a></blockquote>
+               
+            </div>
+
+            <div id="christmas-div" >
+                <img src="img/snowman-1882635__480.jpg" alt="An image of a Christmas themed snowman" width="300px">
+                <p>Christmas is an annual festival commemorating the birth of Jesus Christ, observed primarily on December 25 as a religious and cultural celebration among billions of people around the world.</p>
+                <blockquote>Source:  <a href="https://en.wikipedia.org/wiki/Christmas">Christmas Wikipedia Article</a></blockquote>
+            </div>
+
+            <div id="new-years-div" >
+                <img src="img/fireworks-1953253__480.jpg" alt="An image of New Years Fireworks" width="300px">
+                <p>New Years is the time or day at which a new calendar year begins and the calendar's year count increments by one. Many cultures celebrate the event in some manner.</p>
+                <blockquote>Source:  <a href="https://en.wikipedia.org/wiki/New_Year">New Year Wikipedia Article</a></blockquote>
+            </div>
+        </section>
+
+        <section class="hide-button-section">
+            <button type="button" onclick="functionHideHalloween()" class="halloween-button">Hide Halloween</button>
+
+            <button type="button" onclick="functionHideChristmas()" class="christmas-button">Hide Christmas</button>
+
+            <button type="button" onclick="functionHideNewYears()" class="new-years-button">Hide New Years</button>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p><small>&copy; Created By Beniam Hailu</small></p>
+    </footer>
 </body>
 </html>

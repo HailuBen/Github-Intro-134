@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* height: 100%; */
+}
+
+body {
+    background-color: aliceblue;
+    border: 10px solid lightblue;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    padding: 6px;
+    margin: 0;
+    text-align: center;
+}
+
+section.show-button-section, section.hide-button-section {
+    text-align: center;
+    margin: 0;
+
+}
+
+/* button styles */
+button {
+    margin: 10px;
+    padding: 4px;
+    width: 150px;
+    font-weight: bold;
+}
+button:nth-child(1){
+    background-color: lightsalmon;
+}
+button:nth-child(1):hover{
+    background-color: rgb(162, 105, 83);
+}
+button:nth-child(2){
+    background-color: lightcoral;
+}
+button:nth-child(2):hover{
+    background-color: rgb(120, 67, 67);
+}
+button:nth-child(3){
+    background-color: lightgreen;
+}
+button:nth-child(3):hover{
+    background-color: rgb(74, 123, 74);
+}
+
+
+/* content section styles */
+section.content-section div {
+    display: none;
+    padding: 10px;
+    width: 350px;
+}
+
+blockquote{
+    font-size: 14px;
+}
+
+section.content-section, section.hide-content-section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+/* footer styles */
+footer, footer p {
+    margin: 0;
+    padding: 0;
+}
+footer{
+    padding: 50px;  
+    padding-bottom: 20px;  
+    text-align: center;
+    width: 100%;
+    height: 30px;
+
+    margin-top: auto;
+    
+
+}
